@@ -1,73 +1,147 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
 
-body{
-    text-align: center;
-    background-color: #ecece4;
-    font-family: 'Roboto', sans-serif;
+body {
+  text-align: center;
+  background-color: #ecece4;
+  font-family: 'Roboto', sans-serif;
 }
-.activity{
-    color: #615656;
+
+.activity {
+  color: #615656;
 }
+
 .content {
-    font-size: 24px;
-    text-align: center;
-    margin: 50px;
+  font-size: 40px;
+  text-align: center;
+  margin: 50px;
 }
 
 .fade-in {
-    opacity: 0;
-    animation: fadeIn 1s ease-in forwards; /* Fade in over 1 second */
+  opacity: 0;
+  animation: fadeIn 1s ease-in forwards;
+  /* Fade in over 1 second */
 }
 
 .delayed-fade-in {
-    color: #c70000;
-    opacity: 0;
-    animation: fadeIn 1s ease-in forwards 2s; /* Delayed fade in, starts after 2 seconds */
+  color: #c70000;
+  opacity: 0;
+  animation: fadeIn 1s ease-in forwards 1.2s;
+  /* Delayed fade in, starts after 2 seconds */
 }
+
+.benefits label {
+  font-size: 35px;
+  opacity: 0;
+  animation: fadeIn 1s ease-in forwards 2s;
+}
+
 
 @keyframes fadeIn {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-    }
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
 }
 
-
-
-/* CSS */
 .button-74 {
-    background-color: #fbeee0;
-    border: 2px solid #422800;
-    border-radius: 30px;
-    box-shadow: #422800 4px 4px 0 0;
-    color: #422800;
-    cursor: pointer;
-    display: inline-block;
-    font-weight: 600;
-    font-size: 18px;
-    padding: 0 18px;
-    line-height: 50px;
-    text-align: center;
-    text-decoration: none;
-    user-select: none;
-    -webkit-user-select: none;
-    touch-action: manipulation;
+  background-color: #fbeee0;
+  border: 2px solid #422800;
+  border-radius: 30px;
+  box-shadow: #422800 4px 4px 0 0;
+  color: #422800;
+  cursor: pointer;
+  display: inline-block;
+  font-weight: 600;
+  font-size: 18px;
+  padding: 0 18px;
+  line-height: 50px;
+  text-align: center;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button-74:hover {
+  background-color: #fff;
+}
+
+.button-74:active {
+  box-shadow: #422800 2px 2px 0 0;
+  transform: translate(2px, 2px);
+}
+
+@media (min-width: 768px) {
+  .button-74 {
+    min-width: 120px;
+    padding: 0 25px;
   }
-  
-  .button-74:hover {
-    background-color: #fff;
+}
+
+.images {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px;
+}
+
+.image-container {
+  text-align: center;
+  margin: 10px;
+  width: calc(33.33% - 20px);
+  padding: 20px;
+  background-color: #f8f8f8;
+  /* Set your desired background color */
+  border: 1px solid #ddd;
+  /* Set your desired border color and style */
+  border-radius: 8px;
+  /* Optional: Add border-radius for rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  /* Set your desired box shadow */
+  opacity: 0;
+  /* Set initial opacity to 0 for the fade-in effect */
+  transform: translateY(20px);
+  /* Set initial translateY for the sliding-up effect */
+  animation: slideUp 2s forwards ease-out 3s;
+  /* Animation definition */
+
+}
+.image-container:nth-child(1) {
+  animation-delay: 3.2s; /* Delay for the first container */
+}
+
+.image-container:nth-child(2) {
+  animation-delay: 3.4s; /* Delay for the second container */
+}
+
+.image-container:nth-child(3) {
+  animation-delay: 3.6s; /* Delay for the third container */
+}
+
+.image-container img {
+  width: 100%;
+  /* max-width: 300px; */
+  /* Adjust the max-width as needed */
+  height: auto;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.image-container h3 {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+
+.image-container p {
+  font-size: 1em;
+  color: #555;
+  line-height: 1.4;
+}
+@keyframes slideUp {
+  to {
+      opacity: 1;
+      transform: translateY(0);
   }
-  
-  .button-74:active {
-    box-shadow: #422800 2px 2px 0 0;
-    transform: translate(2px, 2px);
-  }
-  
-  @media (min-width: 768px) {
-    .button-74 {
-      min-width: 120px;
-      padding: 0 25px;
-    }
-  }
+}

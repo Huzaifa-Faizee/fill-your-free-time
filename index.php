@@ -36,6 +36,39 @@ include("activities.php");
                 <?= $activities[$i][0] ?>
             </span>
         </div>
+        <div class="benefits">
+            <label>Benefits</label>
+            <div class="images">
+                <div class="image-container">
+                    <img src=<?php echo "images/" . $activities[$i][1] . "/1.jpg" ?> alt="no image">
+                    <h3>
+                        <?= $benefits[$i][0] ?>
+                    </h3>
+                    <p>
+                        <?= $benefits[$i][1] ?>
+                    </p>
+                </div>
+                <div class="image-container">
+                    <img src=<?php echo "images/" . $activities[$i][1] . "/2.jpg" ?> alt="no image">
+                    <h3>
+                        <?= $benefits[$i][2] ?>
+                    </h3>
+                    <p>
+                        <?= $benefits[$i][3] ?>
+                    </p>
+                </div>
+                <div class="image-container">
+                    <img src=<?php echo "images/" . $activities[$i][1] . "/3.jpg" ?> alt="no image">
+                    <h3>
+                        <?= $benefits[$i][4] ?>
+                    </h3>
+                    <p>
+                        <?= $benefits[$i][5] ?>
+                    </p>
+                </div>
+            </div>
+        </div>
+
         <?php
     }
     ?>
