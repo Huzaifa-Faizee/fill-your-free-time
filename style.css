@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+
+body{
+    text-align: center;
+    background-color: #ecece4;
+    font-family: 'Roboto', sans-serif;
+}
+.content {
+    font-size: 24px;
+    border-right: 2px solid #333;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: typing 3s steps(40) 1;
+    text-align: center;
+}
+
+@keyframes typing {
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 100%;
+    }
+}
