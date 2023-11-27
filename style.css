@@ -83,14 +83,14 @@ body {
 
 .images {
   display: flex;
-  justify-content: space-between;
-  margin: 10px;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
 .image-container {
   text-align: center;
   margin: 10px;
-  width: calc(33.33% - 20px);
+  width: calc(24%);
   padding: 20px;
   background-color: #f8f8f8;
   /* Set your desired background color */
@@ -108,21 +108,24 @@ body {
   /* Animation definition */
 
 }
+
 .image-container:nth-child(1) {
-  animation-delay: 3.2s; /* Delay for the first container */
+  animation-delay: 3.2s;
+  /* Delay for the first container */
 }
 
 .image-container:nth-child(2) {
-  animation-delay: 3.4s; /* Delay for the second container */
+  animation-delay: 3.4s;
+  /* Delay for the second container */
 }
 
 .image-container:nth-child(3) {
-  animation-delay: 3.6s; /* Delay for the third container */
+  animation-delay: 3.6s;
+  /* Delay for the third container */
 }
 
 .image-container img {
   width: 100%;
-  /* max-width: 300px; */
   /* Adjust the max-width as needed */
   height: auto;
   display: block;
@@ -139,9 +142,25 @@ body {
   color: #555;
   line-height: 1.4;
 }
+
+@media (max-width: 768px) {
+  .image-container {
+    width: calc(50% - 20px);
+    /* Two containers per row on smaller screens */
+  }
+}
+
+/* Media query for even smaller screens (adjust max-width as needed) */
+@media (max-width: 480px) {
+  .image-container {
+    width: calc(100% - 20px);
+    /* One container per row on even smaller screens */
+  }
+}
+
 @keyframes slideUp {
   to {
-      opacity: 1;
-      transform: translateY(0);
+    opacity: 1;
+    transform: translateY(0);
   }
 }

@@ -68,6 +68,7 @@ include("activities.php");
                 </div>
             </div>
         </div>
+        <p>Source:<?=$activities[$i][2]?></p>
 
         <?php
     }

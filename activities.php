@@ -1,7 +1,7 @@
 <?php
 $activities = [
-    ["Read a book","Reading"],
-    ["Go for a walk","Walking"],
+    ["Read a book","Reading","https://markhampubliclibrary.ca/blogs/post/top-10-benefits-of-reading-for-all-ages/"],
+    ["Go for a walk","Walking","https://www.healthline.com/health/benefits-of-walking"],
     // ["Try a new recipe"],
     // ["Learn a new language"],
     // ["Start a DIY project"],
